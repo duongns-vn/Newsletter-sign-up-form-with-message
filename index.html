@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Form</title>
+</head>
+<body>
+    <div id="main" role="main">
+
+        <div class="newsletter">
+            <!-- Form content here -->
+            <div class="form_content">
+
+                <div class="content">
+                    <h2>Stay updated!</h2>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+                    <ul>
+                        <li>Product discovery and building what matters</li>
+                        <li>Measuring to ensure updates are a success</li>
+                        <li>And much more!</li>
+                    </ul>
+                </div>
+
+                <form action="submit" id="newsletter_form">
+                    <label for="input_form">
+                        <span>Email address</span>
+                        <span id="error_message">Valid email required</span>
+                    </label>
+    
+                    <input type="text" id="input_form"  placeholder="email@company.com">
+                    <button id="form_button" type="button">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+
+
+            <!-- Form content image -->
+            <div class="form_thumbnails">
+                <img src="./assets/images/illustration-sign-up-desktop.svg" alt="newsletter">
+            </div>
+        </div>
+
+
+        <!-- Message Popup -->
+        <div id="successMessage">
+            <div class="message_content">
+                <img src="./assets/images/icon-list.svg" alt="icon">
+                <div class="message_content_inner">
+                    <h2>Thanks for subscribing!</h2>
+                    <p>A confirmation email has been sent to <span id="yourEmail"></span> Please open it and click the button inside to confirm your subscription.</p>
+                </div>
+            </div>
+            <button class="dismiss_button">Dissmiss message</button>
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</body>
+</html>
